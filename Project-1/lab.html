@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Beauty-Hair Salon</title>
+	<link rel="stylesheet" href="labb.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="img/logoo.jpeg" rel="shortcut icon" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet"> 
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<script src="form.js"></script>
+</head>
+<body>
+<section id="banner">
+	<img src="img/logoo.jpeg" class="logo">
+	<div class="banner-text">
+		<h1>Hair Salon</h1>
+        <p>Style Your Hair Is Style Your Life</p>
+        <div class="banner-btn">
+				<a href="#"><span></span>Find Out</a>
+				<a href="#"><span></span>Read More</a>
+		</div>
+    </div>
+</section>	
+<div id="sideNav">
+		<nav>
+		<ul>
+			<li><a href="#banner">HOME</a></li>
+			<li><a href="#feature">FEATURES</a></li>
+			<li><a href="#service">SERVICES</a></li>
+			<li><a href="#testimonial">TESTIMONIAL</a></li>
+			<li><a href="#footer">MEET US</a></li>
+		</ul>
+		</nav>
+</div>
+	<div id="menuBtn">
+	     <img src="img/menu.png" id="menu">
+	</div>
+
+	<section id="feature">
+	<div class="title-text">
+	<p>FEATURES</p>
+	<h1>Why Choose Us</h1>
+	</div>
+	<div class="feature-box">
+	<div class="features">
+	<h1>Experienced Staff</h1>
+	<div class="features-desc">
+	<div class="feature-icon">
+    <i class="fa fa-shield"></i>
+	</div>
+	<div class="feature-text"></div>
+	<p>Robin Desouza ,Priyanka Manao ,Steven Morris ,Nora Hawkins,John Mcharthy</p>
+	</div>
+	</div>
+    </div>
+	<h1>Pre Booking Online</h1>
+	<div class="features-desc">
+	<div class="feature-icon">
+    <i class="fa fa-check-square-o"></i>
+	</div>
+	<div class="feature-text"></div>
+	<p>Warm greetings! I welcome you to this salon.</p>
+    </div>
+    </div>
+<form name="Form" onsubmit="return validateForm()">
+    <h2>Appointment Form</h2>
+    <div class="box">
+    <label>Full Name</label>
+    <input type="text" name="name" id="name">
+    <div class="error" id="nameErr"></div>
+    </div>
+    <div class="box">
+    <label>Email Address</label>
+    <input type="text" name="email" id="email">
+    <div class="error" id="emailErr"></div>
+    </div>
+    <div class="box">
+    <label>Mobile Number</label>
+    <input type="text" name="mobile" id="mobile" maxlength="10">
+    <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="box">
+    <label>City</label>
+    <select name="city" id="city">
+    <option>Select</option>
+    <option value="Agra">Agra</option>
+<option value="Ahmedabad">Ahmedabad</option>
+<option value="Amritsar">Amritsar</option>
+<option value="Bareilly">Bareilly</option>
+<option value="Bengaluru">Bengaluru</option>
+<option value="Bhopal">Bhopal</option>
+<option value="Bhubaneshwar">Bhubaneshwar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Dehradun">Dehradun</option>
+<option value="Delhi NCR">Delhi NCR</option>
+<option value="Gorakhpur">Gorakhpur</option>
+<option value="Guwahati">Guwahati</option>
+<option value="Gwalior">Gwalior</option>
+<option value="Haldwani">Haldwani</option>
+<option value="Indore">Indore</option>
+<option value="Jabalpur">Jabalpur</option>
+<option value="Jaipur">Jaipur</option>
+<option value="Jalandhar">Jalandhar</option>
+<option value="Jammu">Jammu</option>
+<option value="Jhansi">Jhansi</option>
+<option value="Kanpur">Kanpur</option>
+<option value="Karnal">Karnal</option>
+<option value="Lucknow">Lucknow</option>
+<option value="Ludhiana">Ludhiana</option>
+<option value="Mathura">Mathura</option>
+<option value="Mohali">Mohali</option>
+<option value="Moradabad">Moradabad</option>
+<option value="Mumbai">Mumbai</option>
+<option value="New Delhi">New Delhi</option>
+<option value="panchkula">panchkula</option>
+<option value="Meerut">Meerut</option>
+<option value="Panipat">Panipat</option>
+<option value="Patna">Patna</option>
+<option value="Pune">Pune</option>
+<option value="Rohtak">Rohtak</option>
+<option value="Varanasi">Varanasi</option>
+    </select>
+    <div class="error" id="cityErr"></div>
+    </div>
+    <div class="box">
+    <label>Gender</label>
+    <div class="form-inline" id="gender">
+    <label><input type="radio" name="gender" value="Male">Male</label>
+    <label><input type="radio" name="gender" value="Female">Female</label>
+    </div>
+    <div class="error" id="genderErr"></div>
+    </div>
+    <div class="box">
+    <input type="submit" value="Submit">
+    </div>
+</form>
+	<h1>Affordable Cost</h1>
+	<div class="features-desc">
+	<div class="feature-icon">
+	<i class="fa fa-inr"></i>
+	</div>
+	<div class="feature-text"></div>
+	<p>You can be able to enjoy this great destination at an affordable cost.</p>
+	</div>
+	<div class="features-img">
+	<img src="img/barber.jpeg">
+	</div>
+	</section>
+
+
+	<section id="service">
+		<div class="title-text">
+		<p>Services</p>
+		<h1>We Provide Better</h1>
+		</div>
+		<div class="service-box">
+		<div class="single-service">
+		<img src="img/1.jpg">
+		<div class="overlay"></div>
+		<div class="service-desc">
+		<h3>Hair Styling</h3>
+		<hr>
+		<p>this is test under description of salon foundation</p> 
+		</div>
+		</div>
+		<div class="single-service">
+		<img src="img/pixie.jpeg">
+		<div class="overlay"></div>
+		<div class="service-desc">
+		<h3>hair cut</h3>
+		<hr>
+		<p>this is test under description of salon foundation</p> 
+		</div>
+		</div>
+		<div class="single-service">
+		<img src="img/Afro-Fade.jpeg">
+		<div class="overlay"></div><div class="service-desc">
+		<h3>pixie cut</h3>
+		<hr>
+		<p>this is test under description of salon foundation</p> 
+		</div>
+		</div>
+		<div class="single-service">
+		<img src="img/sideswept.jpeg">
+		<div class="overlay"></div><div class="service-desc">
+		<h3>afro cut</h3>
+		<hr>
+		<p>this is test under description of salon foundation</p> 
+		</div>
+		</div>
+	</section>
+	<section id="testimonial">
+		<div class="title-text">
+		<p>TESTIMONIAL</p>
+		<h1>What Client Says</h1>	
+		</div>
+		<div class="testimonial-row">
+		<div class="testimonial-col">
+		<div class="user">
+		<div class="user-info">
+		<h4>KEN NORMAN <i class="fa fa-twitter"></i></h4>
+		<small>@kennorman</small>
+		</div>
+		</div>
+		<p>This Hair Salon is great! Thoughtful and careful, he doesn’t whip through the haircut. Spends time with his clients and will make take time making adjustments. No rush, great style, trust him with your head!</p>
+		</div>
+		<div class="testimonial-col">
+		<div class="user">
+		<div class="user-info">
+		<h4>LARA KARIAN <i class="fa fa-twitter"></i></h4>
+		<small>@larakarian</small>
+		</div>
+		</div>
+		<p>My favorite salon for the best stylish hair style! It’s not only affordable but also amazing haircuts. Excellent hair products and the appointment starts on time! I’ve been going there for many years and I have never been disappointed. Highly recommend!</p>
+		</div>
+		<div class="testimonial-col">
+		<div class="user">
+		<div class="user-info">
+		<h4>MICHAEL JACK <i class="fa fa-twitter"></i></h4>
+		<small>@michaeljack</small>
+		</div>
+		</div>
+		<p>I can’t speak highly enough of this salon is the definition of perfection when it comes to haircutting. I’ve been getting compliments daily as a result of his work!</p>
+		</div>
+	</section>
+	<section id="footer">
+	<div class="title-text">
+	<p>CONTACT</p>
+	<h1>Visit Shop</h1>
+	</div>
+	<div class="footer-row">
+	<div class="footer-left">
+	<h1>Opening Hours</h1>
+	<p><i class="fa fa-clock-o"></i>Monday To Friday - 9am to 9pm</p>
+	<p><i class="fa fa-clock-o"></i>Saturday And Sunday - 9am to 7pm</p>
+	</div>
+	<div class="footer-right">
+	<h1>Get In Touch</h1>
+	<p>#30 nadiyan paar colony, abc City In<i class="fa fa-map-marker"></i></p>
+	<p>beauty@hairsalon.com<i class="fa fa-paper-plane"></i></p>
+    <p>+01 112345679<i class="fa fa-phone"></i></p>
+	</div>
+	<div class="social-links">
+		 <i class="fa fa-facebook"></i>
+		 <i class="fa fa-instagram"></i>
+		 <i class="fa fa-twitter"></i>
+		 <i class="fa fa-youtube-play"></i>
+		 <p>Beauty Hair Salon 2021 All Rights Reserved.</p>
+	</div>
+	</section>
+	<script>
+	 var menuBtn = document.getElementById("menuBtn")
+	 var sideNav = document.getElementById("sideNav")
+	 var menu = document.getElementById("menu")
+	 menuBtn.onclick = function(){
+	 	if(sideNav.style.right == "-250px"){
+	 		sideNav.style.right = "0";
+	 		menu.src = "img/close.png";
+	 	}
+	 	else{
+	 		sideNav.style.right = "-250px";
+	 		menu.src = "img/menu.png";
+	 	}
+	 }
+	 var scroll = new SmoothScroll('a[href*="#"]', {
+	 	speed: 1000,
+	 	speedAsDuration: true
+	 });
+    </script>
+</body>
+</html>
